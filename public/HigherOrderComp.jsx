@@ -6,11 +6,11 @@ const HigherOrderComp = (Counter) => {
     const handleClick = () =>{
         setCount(count +1 )
     }
-
         return <Counter count ={count} handleEvent={handleClick}/>
     }
     return Inner
-  
 }
 
 export default HigherOrderComp
+
+

@@ -394,12 +394,12 @@ export default App;
 // const App = () => {
 //   const [data, setData] = useState([]);
 //   const [text, setText] = useState('');
-// useEffect(()=>{
-//   fetch("https://jsonplaceholder.typicode.com/posts")
-//   .then((response) => response.json())
-//   .then((data) => setData(data))
-//   .catch((Err) => console.log("Data is not there"));
-// },[])
+useEffect(()=>{
+  fetch("https://jsonplaceholder.typicode.com/posts")
+  .then((response) => response.json())
+  .then((data) => setData(data))
+  .catch((Err) => console.log("Data is not there"));
+},[])
 
 //   const handleOnchange = (e) => {
 //     setText(e.target.value)

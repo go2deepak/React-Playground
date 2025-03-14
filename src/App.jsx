@@ -1,18 +1,15 @@
-// function Card({ children }) {
-//   return (
-//     <div className="card">
-//       {children}
-//     </div>
-//   );
-// }
+import React from 'react'
+import Axios from './components/CRUD/Axios'
+import Clock from './components/Timer/Timer';
 
-function App({children}) {
+
+
+const App = () => {
   return (
     <div>
-      <h1>{children}</h1>
-      <p>This is some content inside the card.</p>
+      <Axios />
     </div>
-  );
+  )
 }
 
 export default App
